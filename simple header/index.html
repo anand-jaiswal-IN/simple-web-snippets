@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <div class="outer-wrapper">
+        <nav>
+            <div class="logo">
+                <a href="">LOGO</a>
+                <button id="navbarToggleBtn" onclick="navBarToggle()"><i class="fas fa-times fa-lg"></i></button>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Feature</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Feed</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Details</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <h1>
+                We dive into <span style="color: rgb(255, 136, 39);">sea.</span> 
+            </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Totam modi consequatur exercitationem officia, aut rerum.</p>
+            <a href="">Read me</a>
+        </header>
+    </div>
+</body>
+<script>
+    var navbar = document.getElementsByClassName("navbar")[0];
+    var navbarToggleBtn = document.getElementById("navbarToggleBtn")
+
+    var navBarToggle = function () {
+
+        if (navbar.style.display == "none") {
+            navbar.style.display = "block";
+            navbarToggleBtn.innerHTML = '<i class="fas fa-times fa-lg"></i>'
+        }
+        else {
+            navbar.style.display = "none";
+            navbarToggleBtn.innerHTML = '<i class="fas fa-bars fa-lg"></i>'
+        }
+    }
+</script>
+
+</html>

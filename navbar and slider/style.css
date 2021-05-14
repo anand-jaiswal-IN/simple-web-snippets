@@ -1,0 +1,42 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    /* background-color: rgb(10, 4, 93); */
+}
+
+nav {
+    background-color: rgb(11, 8, 37);
+    font-size: 2em;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+}
+button {
+    transition: all 0.2s ease-in-out;
+}
+#toogleNavbar{
+    position: absolute;
+    outline: none;
+    border: none;
+    color: #fff;
+    left: 12em;
+    width: 3em;
+    height: 3em;
+    background-color: rgb(79, 5, 197);
+}
+nav a {
+    display: inline-block;
+    width: 8em;
+    text-align: left;
+    padding: 2em;
+    background-color: rgb(19, 8, 119);
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+    background-color: rgb(255, 80, 36);
+}
+.navbarActive {
+    transform: translateX(-8em);
+}

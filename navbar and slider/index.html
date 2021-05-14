@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Side navbar</title>
+</head>
+<body>
+    <nav>
+        <button id="toogleNavbar" onclick="navToggle()"><i class="fas fa-times fa-2x"></i></button>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Edit</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Details</a></li>
+            <li><a href="">Link1</a></li>
+            <li><a href="">Link2</a></li>
+        </ul>
+    </nav>
+    <script>
+        var nav = document.getElementsByTagName("nav")[0]
+
+        navToggle = function() {
+            if (nav.classList[0] == "navbarActive") {
+                nav.classList.remove("navbarActive")
+                document.getElementById("toogleNavbar").innerHTML = '<i class="fas fa-times fa-2x"></i>'
+            }
+            else {
+            nav.classList.add("navbarActive")
+            document.getElementById("toogleNavbar").innerHTML = '<i class="fas fa-bars fa-2x"></i>'
+            }
+        }
+    </script>
+</body>
+</html>
